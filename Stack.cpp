@@ -52,7 +52,7 @@ float Stack::pop()
 
 void Stack::swap()
 {
-    if (!existTop() || hasAny(2)) return;
+    if (!existTop() || !hasAny(2)) return;
     nodeStack *tmp = topNode;
     topNode = topNode->next;
     tmp->next = topNode->next;
