@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1694324351 source:c:\users\dgreyes\desktop\daniel files\estructura de datos i\semana 6\stackinterpreter\stackinterpreter\mainstack.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<unordered_map>
+	"Stack.h"
+
+1694324273 c:\users\dgreyes\desktop\daniel files\estructura de datos i\semana 6\stackinterpreter\stackinterpreter\stack.h
+	<iostream>
+
+1694324469 source:c:\users\dgreyes\desktop\daniel files\estructura de datos i\semana 6\stackinterpreter\stackinterpreter\stack.cpp
+	<iostream>
+	<math.h>
+	"Stack.h"
+	"nodeStack.h"
+
+1694320756 c:\users\dgreyes\desktop\daniel files\estructura de datos i\semana 6\stackinterpreter\stackinterpreter\nodestack.h
+	<iostream>
+
