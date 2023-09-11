@@ -32,7 +32,7 @@ void Stack::drop()
     topNode = topNode->next;
     delete tmp;
     nNodes--;
-    
+
 }
 
 float Stack::top()
@@ -153,7 +153,7 @@ void Stack::clear()
     if (!existTop()) return;
     depth();
     dropn();
-    
+
 }
 
 void Stack::show()
@@ -229,3 +229,22 @@ bool Stack::isEmpty() {
 bool Stack::hasAny(int nNodesMin) {
     return nNodes >= nNodesMin;
 }
+
+void Stack::invert() {
+    if (isEmpty()) return;
+    float topValue = pop();
+
+    // Si la pila aún no está vacía, sigue invirtiendo
+    invert();
+
+    // Insertar el valor extraído en la base de la pila invertida
+    if (isEmpty()) {
+        push(topValue);
+    } else {
+        float nextValue = pop();
+        push(topValue);
+        invert();
+        push(nextValue);
+    }
+}
+

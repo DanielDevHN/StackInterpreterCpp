@@ -41,6 +41,8 @@ public:
     bool isEmpty();
     bool hasAny(int);
 
+    void invert();
+
     
 
     

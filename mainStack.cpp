@@ -53,7 +53,7 @@ void executeInstructions(const vector<string>& instructions, Stack& stack) {
                 cout << "> ";
                 cin.clear();
                 cin.ignore(123, '\n');
-            }   
+            }
             stack.push(value);
 
         } else if (instruction == "TOP") {
@@ -92,6 +92,7 @@ int main() {
         {"ROLLU", &Stack::rollu},
         {"SHOW", &Stack::show},
         {"SWAP", &Stack::swap},
+        {"INVERT", &Stack::invert},
         {"+", &Stack::add},
         {"-", &Stack::sub},
         {"/", &Stack::div},
